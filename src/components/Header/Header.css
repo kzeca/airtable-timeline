@@ -1,0 +1,21 @@
+.HeaderContainer {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+
+.DayContainer {
+  padding: 10px 15px;
+  border: 1px var(--palette-gray-gray500) solid;
+  min-width: 75px;
+}
+
+h6,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.MonthBegin {
+  margin-bottom: 0.325rem;
+}

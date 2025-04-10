@@ -1,0 +1,16 @@
+.DateGroupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8px;
+  background: var(--palette-green-green);
+  height: 25px;
+  border-radius: 25px;
+}
+
+.DateGroupContainer:hover {
+  transition: all 0.5s ease-out;
+  background: var(--palette-green-greenLight1);
+  cursor: pointer;
+  height: 50px;
+}

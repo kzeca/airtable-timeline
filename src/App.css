@@ -1,0 +1,16 @@
+.page {
+  width: 100dvw;
+  height: 100dvh;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 90%;
+  padding: 1rem;
+  border: 1px var(--palette-gray-gray300) solid;
+  overflow-x: scroll;
+}

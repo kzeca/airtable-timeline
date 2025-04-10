@@ -1,0 +1,17 @@
+:root {
+  --palette-red-red: rgb(220, 4, 59);
+  --palette-cyan-cyan: rgb(57, 202, 255);
+  --palette-yellow-yellow: rgb(255, 186, 5);
+  --palette-gray-gray500: rgb(97, 102, 112);
+  --palette-neutral-black: rgb(29, 31, 37);
+  --palette-gray-gray300: rgb(196, 199, 205);
+  --palette-green-green: rgb(4, 138, 14);
+  --palette-green-greenLight1: rgb(154, 224, 149);
+  --background: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}

@@ -1,0 +1,38 @@
+.TimelineContainer {
+  display: flex;
+  flex-direction: row;
+  width: 11325px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.DataRange {
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 10px;
+  color: var(--palette-gray-gray500);
+}
+
+.TimelineContentMin {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+  padding: 5px;
+  background: linear-gradient(
+    to right,
+    var(--palette-red-red),
+    var(--palette-yellow-yellow),
+    var(--palette-cyan-cyan)
+  );
+  border-radius: 20px;
+}
+
+.AdjustForRange {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 1rem;
+}
