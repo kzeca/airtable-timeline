@@ -4,13 +4,7 @@ import { generateFullRage } from "../../utils/generateFullRange";
 import moment from "moment";
 import { rangeValue } from "../../utils/rangeValue";
 
-export default function Timeline({
-  groupedDates,
-  dates,
-  start,
-  end,
-  groupIndex,
-}) {
+export default function Timeline({ groupedDates, start, groupIndex }) {
   return (
     <div className="TimelineContainer">
       <div

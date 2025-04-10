@@ -31,9 +31,7 @@ function App() {
                   .length
               }
               groupIndex={index}
-              dates={dates}
               start={lanes[0].start}
-              end={lanes[lanes.length - 1].end}
             />
           );
         })}

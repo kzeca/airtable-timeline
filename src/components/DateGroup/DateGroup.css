@@ -1,11 +1,12 @@
 .DateGroupContainer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  font-size: 8px;
+  font-size: 10px;
   background: var(--palette-green-green);
   height: 25px;
   border-radius: 25px;
+  padding-left: 0.5rem;
 }
 
 .DateGroupContainer:hover {
