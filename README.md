@@ -1,49 +1,85 @@
-# Airtable timeline assignment
+# 📅 Airtable Timeline Clone
 
-## Expected implementation time:
+This project is a custom-built interactive timeline component inspired by Airtable's timeline view. It takes a list of events with start/end dates and visually places them on a timeline organized by lanes.
 
-4 hours
+---
 
-## High level objective:
+## ✨ What I like about this implementation
 
-Design and implement a component for visualizing items on a timeline.
+- **Pure CSS layouting**: Instead of relying on heavy libraries or pre-built timeline components, the layout is built from scratch using CSS only — this gave me total control over styling, performance, and responsiveness.
+- **Modular structure**: The logic for things like assigning lanes, generating the date range, and formatting the display is separated into small, reusable utilities.
+- **Dynamic headers**: The date headers are automatically generated with weekdays and month/year markers, making the component scalable to any time range.
+- **Visual clarity**: Using `107px` as a fixed width per day keeps spacing consistent and makes it easy to reason about the timeline.
 
-## Details:
+---
 
-Your timeline component should arrange items in horizontal lanes. These items should be laid out in a compact, space-efficient way: if item A ends before item B starts, they can share a lane instead of being rendered on separate lanes. You may want to slightly relax this constraint to fit in the name of the event (for example, if an item is too short, or the item’s name is too long).
+## 🔁 What I would change if I did it again
 
-The start and end dates will be formatted as YYYY-MM-DD date strings, for example: `2025-02-20`. You don’t need to worry about hours, minutes, seconds, or time zones. You can assume every item’s end date is the same or later than its start date.
+- **Improve accessibility**: I would add ARIA roles and keyboard navigation to improve usability for all users.
+- **Add interaction**: Drag-and-drop for timeline items would make the UI more powerful.
+- **Styling system**: Move away from plain CSS files and adopt CSS Modules, Tailwind, or Styled Components for better maintainability.
 
-To help you implement the compact lanes, we’ve provided you with `src/assignLanes.js`. Feel free to modify and use this code however you like.
+---
 
-You are welcome to use general purpose libraries (Moment, UI primitive libraries, etc.), but you should avoid using libraries that solve too much of the problem (i.e. renders a timeline).
+## 🧠 Design decisions and inspiration
 
-In addition to rendering the timeline, use whatever time you have remaining to implement any of the following enhancements:
+- I researched **Airtable's** timeline view to find a balance between usability and simplicity.
+- I intentionally avoided external UI libraries to stay close to the core logic and fully understand the data visualization workflow.
+- CSS-only layout was chosen to avoid conflicts and reduce dependency bloat.
 
-- Allow zooming in and out of the timeline
-- Allow dragging and dropping to change the start and/or end date of an item
-- Allow editing the name of items inline
-- Any other polish or useful enhancements you can think of
+---
 
-Include a README that covers:
+## ✅ How I would test this with more time
 
-- What you like about your implementation.
-- What you would change if you were going to do it again.
-- How you made your design decisions. For example, if you looked at other timelines for inspiration, please note that.
-- How you would test this if you had more time.
+- **Unit tests** for key utility functions like `assignLanes`, `generateFullRange`, and `rangeValue`.
+- **Integration tests** for rendering the timeline component with different data sets using something like `React Testing Library`.
+- **Visual regression testing** to ensure the layout doesn’t break when styles change.
 
-If you did not use the starter code, please also include instructions on how to build and run your project so we can see and interact with the timeline component you built. It should render the sample data included in `src/timelineItems.js`.
+---
 
-What we’re looking for:
+## 🚀 How to run the project
 
-- Clean, readable, maintainable code.
-- A sensible user experience and design for the final product.
+This project was built using **Vite** for fast local development and HMR.
 
-## Starter code:
+### 1. Clone the repository
 
-1. Navigate to this project directory
-2. Run `npm install` to install dependencies
-3. Run `npm start` to initialize and connect to a node server with your default browser
-4. Develop in your own local environment
+```bash
+git clone https://github.com/your-username/airtable-timeline.git
+cd airtable-timeline
+```
 
-Please feel free to use as much or as little of the starter code as you'd like.
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the dev server
+
+```bash
+npm run dev
+```
+
+The project will be available at http://localhost:5173.
+
+---
+
+## 📁 Sample data
+
+The project uses sample data provided in:
+
+```bash
+src/data/timelineItems.js
+```
+
+This data is automatically rendered inside the App.jsx component via the DatesProvider context.
+
+---
+
+## 🔍 Highlights
+
+- Full CSS styling with fine-tuned control over layout.
+- Timeline lanes dynamically assigned based on item start/end dates.
+- Context API used for global state management.
+- Moment.js for date manipulation and formatting (weekday labels, month sections, day diffs).
+- Modular utilities for lane assignment and range generation.
