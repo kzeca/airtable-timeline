@@ -78,6 +78,7 @@ This data is automatically rendered inside the App.jsx component via the DatesPr
 
 ## 🔍 Highlights
 
+- System fully working with a 4 hour deadline.
 - Full CSS styling with fine-tuned control over layout.
 - Timeline lanes dynamically assigned based on item start/end dates.
 - Context API used for global state management.
